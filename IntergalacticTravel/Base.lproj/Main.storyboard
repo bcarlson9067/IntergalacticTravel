@@ -16,7 +16,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="R52-gP-wxx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OA4-5D-OZc">
+                                <rect key="frame" x="112" y="227" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.054348913040000002" blue="0.02623170327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Red Dwarf">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mxf-fF-5pg" kind="show" id="hVd-4i-zNm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R52-gP-wxx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8JI-jN-akj"/>
+                            <constraint firstItem="R52-gP-wxx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hTx-26-Lyv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R52-gP-wxx" secondAttribute="trailing" id="ifg-fx-Jbz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R52-gP-wxx" secondAttribute="bottom" id="uJE-mr-DNu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Intergalactic Travel Inc." id="V91-1f-IOt"/>
@@ -32,9 +55,23 @@
                     <view key="view" contentMode="scaleToFill" id="fKG-na-OE3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Clr-z4-bni">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Clr-z4-bni" firstAttribute="top" secondItem="iSY-lm-3V3" secondAttribute="top" id="8I1-C5-U4M"/>
+                            <constraint firstItem="iSY-lm-3V3" firstAttribute="trailing" secondItem="Clr-z4-bni" secondAttribute="trailing" id="Rsa-E5-B1r"/>
+                            <constraint firstItem="iSY-lm-3V3" firstAttribute="bottom" secondItem="Clr-z4-bni" secondAttribute="bottom" id="lXa-0I-chT"/>
+                            <constraint firstItem="Clr-z4-bni" firstAttribute="leading" secondItem="iSY-lm-3V3" secondAttribute="leading" id="s4f-ch-z1j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iSY-lm-3V3"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Clr-z4-bni" id="taP-yI-M26"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPe-jS-xqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,4 +96,7 @@
             <point key="canvasLocation" x="-79.200000000000003" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Galaxy" width="248" height="203"/>
+    </resources>
 </document>
