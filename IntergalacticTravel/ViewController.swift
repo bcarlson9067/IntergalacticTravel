@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! StarViewController
+        nvc.title = "Cool"
+    }
 }
 
