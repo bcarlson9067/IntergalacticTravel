@@ -29,7 +29,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mxf-fF-5pg" kind="show" id="hVd-4i-zNm"/>
+                                    <segue destination="mxf-fF-5pg" kind="show" identifier="starSegue" id="hVd-4i-zNm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9X-Nd-N9W">
+                                <rect key="frame" x="112" y="308" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Blue Dwarf"/>
+                                <connections>
+                                    <action selector="whenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rE1-9z-aCb"/>
                                 </connections>
                             </button>
                         </subviews>
